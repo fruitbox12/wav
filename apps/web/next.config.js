@@ -13,14 +13,5 @@ module.exports = {
     // !! WARN !!
     ignoreBuildErrors: true,
   },
-  future: {
-    webpack5: false,
-  },
-  webpack: (config, {}) => {
-      config.resolve.fallback = {
-          ...config.resolve.fallback,
-          fs: false,
-        };
-        return config;
-  },
+  
 };
